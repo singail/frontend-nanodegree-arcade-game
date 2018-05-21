@@ -79,7 +79,7 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        //checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the
@@ -118,6 +118,12 @@ var Engine = (function(global) {
             numCols = 5,
             row, col;
         
+        var stars = [
+             'images/Star.png',
+             'images/Star.png',
+             'images/Star.png'
+        ];
+        
         // Before drawing, clear existing canvas
         ctx.clearRect(0,0,canvas.width,canvas.height)
 
@@ -154,6 +160,10 @@ var Engine = (function(global) {
         });
 
         player.render();
+        star1.render();
+        star2.render();
+        star3.render();
+        
     }
 
     /* This function does nothing but it could have been a good place to
@@ -169,11 +179,13 @@ var Engine = (function(global) {
      * all of these images are properly loaded our game will start.
      */
     Resources.load([
+         'images/Star.png',
         'images/stone-block.png',
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-horn-girl.png'
     ]);
     Resources.onReady(init);
 
