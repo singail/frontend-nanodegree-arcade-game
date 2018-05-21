@@ -177,6 +177,7 @@ function countPoints() {
     }
 }
 
+//Close the modal and reset the game
 button.addEventListener('click', function () {
     winner.style.display = 'none';
     resetGame();
@@ -187,9 +188,10 @@ close.addEventListener('click', function () {
     resetGame();
 })
 
+//Reset the game after the modal is closed
 function resetGame() {
-    let count = 0;
-    let points = 0;
+    count = 0;
+    points = 0;
     star1.x = 350;
     star2.x = 400;
     star3.x = 450;
