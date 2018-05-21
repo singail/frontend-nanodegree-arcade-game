@@ -38,6 +38,7 @@ Enemy.prototype.update = function (dt) {
         player.y + 60 > this.y) {
         //If there is a collision, move player back to the start position and count collisions
         player.reset();
+        points = 0;
         count++;
         countCollisions();
     }
