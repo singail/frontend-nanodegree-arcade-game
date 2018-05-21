@@ -169,7 +169,7 @@ function gameOver() {
 
 //This function announces that the player has won, if he has 6 points
 function countPoints() {
-    if (points == 1) {
+    if (points == 6) {
         setTimeout(function () {
             winner.style.display = 'block';
         }, 500);
