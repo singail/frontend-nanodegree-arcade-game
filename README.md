@@ -7,7 +7,7 @@ This project is a part of the Front-End Web Developer Nanodegree Program of Udac
 
 ## How to run the game 
 
-Use this link to play the game: [Play] (https://singail.github.io/frontend-nanodegree-arcade-game/)
+Use this link to play the game: https://singail.github.io/frontend-nanodegree-arcade-game/
 
 ## How to play
 
