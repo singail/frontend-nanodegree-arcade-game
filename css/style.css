@@ -1,3 +1,64 @@
 body {
     text-align: center;
 }
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #eed246;
+    font-size: 3em;
+    text-shadow: 4px 4px 2px rgb(141, 156, 226);
+}
+
+#winnerModal {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.results {
+    width: 100%;
+    background: #76cb5a;
+    padding: 20px;
+    box-shadow: 20px 6px 20px 2px rgba(46, 61, 73, 0.5);
+}
+
+.close {
+    color: black;
+    font-size: 50px;
+    float: right;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+.congrats {
+    font-weight: 600;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.playAgain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #586fd8;
+    color: white;
+    font-size: 20px;
+    border: #6a7ed9 solid 2px;
+    box-shadow: 6px 4px 9px 1px rgba(46, 61, 73, 0.5);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
